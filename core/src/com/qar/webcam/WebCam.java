@@ -18,14 +18,18 @@ public class WebCam {
 	private Texture camTexture ;
 	
 	public Vector2 position ;
-	int width=800,height=640;
+	int width=800,height=600;
 	Resolation resolation = Resolation.r640x360 ;
 	
+	Imgcodecs a;
 	public enum Resolation{
 		r640x360,
 		r800x600,
 		r1280x800,
 		r1366x768
+	}
+	public String getPath(){
+		return path;
 	}
 	
 	public void setResolation(Resolation res){
@@ -79,7 +83,7 @@ public class WebCam {
 	}
 	public void camDraw(SpriteBatch sb){
 		sb.begin();
-		sb.draw(camTexture,position.x,position.y,width,height);
+		sb.draw(camTexture,0,0,width,height);
 		sb.end();
 	}
 	public void camDraw(SpriteBatch sb , int posx,int posy){
