@@ -65,13 +65,13 @@ public class FaceDetection {
 			faceDetector.detectMultiScale(image, faces);
 			if(faces.toArray().length > 0){
 			DrawDebugRect();
-			if(lastRect0.equals(null))
+			if(lastRect0 == null)
 				{
 					lastRect0 = faces.toArray()[0];
 				}
 				else{
 					faces.toArray()[0] = new Rect((lastRect0.x + faces.toArray()[0].x)/2, (lastRect0.y + faces.toArray()[0].y)/2, (lastRect0.width + faces.toArray()[0].width)/2, (lastRect0.height + faces.toArray()[0].height)/2);
-					if(lastRect1.equals(null))
+					if(lastRect1 == null)
 					{
 						lastRect1 = faces.toArray()[0];
 					}else{
