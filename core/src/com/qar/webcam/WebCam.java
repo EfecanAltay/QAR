@@ -83,7 +83,7 @@ public class WebCam {
 	}
 	public void camDraw(SpriteBatch sb){
 		sb.begin();
-		sb.draw(camTexture,0,0,width,height);
+		sb.draw(camTexture,0,0);
 		sb.end();
 	}
 	public void camDraw(SpriteBatch sb , int posx,int posy){

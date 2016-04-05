@@ -38,9 +38,10 @@ public class Main extends ApplicationAdapter {
 		
 		if(fd.getFaces().length >0){
 			x = fd.getFaces()[0].x;
+			y =480-fd.getFaces()[0].y -fd.getFaces()[0].height;
 		}
 		batch.begin();
-		batch.draw(img,x,20);
+		batch.draw(img,x,y);
 		//batch.draw(new Texture("DetectOutPut/Faces/image0.png"),0,0);
 		batch.end();
 		

@@ -27,6 +27,7 @@ public class FaceDetection {
 	CascadeClassifier faceDetector;
 	ShapeRenderer shr;
 	
+	Rect lastRect0,lastRect1;
 	public FaceDetection(String path) {
 		// TODO Auto-generated constructor stub
 		System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
@@ -40,12 +41,16 @@ public class FaceDetection {
 		
 		System.out.println(currentDirFile.getAbsoluteFile().getParentFile().getParentFile().getPath());
 		
-		faceDetector = new CascadeClassifier(currentDirFile.getAbsoluteFile().getParentFile().getParentFile().getPath() + "/core/res/haarcascade_frontalface_alt.xml");
+		faceDetector = new CascadeClassifier(currentDirFile.getAbsoluteFile().getParentFile().getParentFile().getPath() + "/core/res/haarcascades/haarcascade_frontalface_alt.xml");
 		
 		image = Imgcodecs.imread(path);
 		faces = new MatOfRect();
 		
 		faceDetector.detectMultiScale(image, faces);
+		if(faces.toArray().length > 0){
+			lastRect0 = faces.toArray()[0];
+			lastRect1 = faces.toArray()[0];
+		}
 		
 		System.out.println("Taranan Yüz Sayýsý: " + faces.toArray().length);
 	}
@@ -58,7 +63,22 @@ public class FaceDetection {
 		if(!image.empty()){
 			faces = new MatOfRect();
 			faceDetector.detectMultiScale(image, faces);
+			if(faces.toArray().length > 0){
 			DrawDebugRect();
+			if(lastRect0.equals(null))
+				{
+					lastRect0 = faces.toArray()[0];
+				}
+				else{
+					faces.toArray()[0] = new Rect((lastRect0.x + faces.toArray()[0].x)/2, (lastRect0.y + faces.toArray()[0].y)/2, (lastRect0.width + faces.toArray()[0].width)/2, (lastRect0.height + faces.toArray()[0].height)/2);
+					if(lastRect1.equals(null))
+					{
+						lastRect1 = faces.toArray()[0];
+					}else{
+						faces.toArray()[0] = new Rect((lastRect1.x + faces.toArray()[0].x)/2, (lastRect1.y + faces.toArray()[0].y)/2, (lastRect1.width + faces.toArray()[0].width)/2, (lastRect1.height + faces.toArray()[0].height)/2);
+					}
+				}
+			}
 		}
 	}
 	private void DrawDebugRect(){
