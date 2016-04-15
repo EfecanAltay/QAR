@@ -28,8 +28,19 @@ Gelecek Güncellemeler :<br>
 :-1: El ve işaretlerin eklenmesi<br>
 :clock1:...<br>
 
+>>>>>>> 
+# How To Develop
 
+->Qar project clone your local repo
+->create local.properties to project root folder
+->add "sdk.dir=C:/Users/YourUser/Android/sdk{Your Android sdk file path}
+->and import your project as Gradle Project and Finish
 
+>>>>>>>
+#Nasıl Geliştirebilirim
+->Qar projemizi local olarak bilgisayarımıza clone ediyoruz.
+->Projemizin ana klasörünün içine local.properties dosyası oluşturuyoruz
+->içine "sdk.dir=C:/Users/YourUser/Android/sdk{Your Android sdk file path}" yolunu yazıp kaydediyoruz.
+->ve simdi eclipse içinde gradle olarak porjemizi import edebiliriz.
 
->>>>>>> 5213c1dffbbbffd964ce323376b2e468d5e38c55
-
+(Sdk.dir Error Link)Ayrıntılı hata linki
