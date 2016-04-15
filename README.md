@@ -31,7 +31,7 @@ Gelecek Güncellemeler :<br>
 ->create local.properties to project root folder<br>
 ->add "sdk.dir=C:/Users/YourUser/Android/sdk{Your Android sdk file path}<br>
 ->now import your project as Gradle Project in Eclipse and Finish<br>
-->and add your project <h2>opencv301</h2> library<br>  
+->and add your project opencv301 library<br>  
 
 Help:<br>
 http://docs.opencv.org/2.4/doc/tutorials/introduction/java_eclipse/java_eclipse.html<br>
