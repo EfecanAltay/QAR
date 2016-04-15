@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # QAR
 Quality Augmented Reality
 Opencv Opetimaze for Libgdx
@@ -6,8 +5,7 @@ Opencv Opetimaze for Libgdx
 #QAR
 <h3>Quality Augmented Reality</h3>
 
-##English
-[Opencv Opetimaze Library for Libgdx]
+##[Opencv Opetimaze Library for Libgdx]
 
 coming update :<br>
 :+1: adding Webcam<br>
@@ -17,8 +15,7 @@ coming update :<br>
 :-1: adding hand and finger signal Command<br>
 :clock1: ...<br>
 
-##Türkçe
-[Libgdx kütüphanesi için optimize edilmiş opencv kütüphanesi]
+##[Libgdx kütüphanesi için optimize edilmiş opencv kütüphanesi]
 
 Gelecek Güncellemeler :<br>
 :+1: Webcam eklenmesi<br>
@@ -28,19 +25,18 @@ Gelecek Güncellemeler :<br>
 :-1: El ve işaretlerin eklenmesi<br>
 :clock1:...<br>
 
->>>>>>> 
 # How To Develop
 
-->Qar project clone your local repo
-->create local.properties to project root folder
-->add "sdk.dir=C:/Users/YourUser/Android/sdk{Your Android sdk file path}
-->and import your project as Gradle Project and Finish
+->Qar project clone your local repo<br>
+->create local.properties to project root folder<br>
+->add "sdk.dir=C:/Users/YourUser/Android/sdk{Your Android sdk file path}<br>
+->and import your project as Gradle Project and Finish<br>
 
->>>>>>>
 #Nasıl Geliştirebilirim
-->Qar projemizi local olarak bilgisayarımıza clone ediyoruz.
-->Projemizin ana klasörünün içine local.properties dosyası oluşturuyoruz
-->içine "sdk.dir=C:/Users/YourUser/Android/sdk{Your Android sdk file path}" yolunu yazıp kaydediyoruz.
-->ve simdi eclipse içinde gradle olarak porjemizi import edebiliriz.
+->Qar projemizi local olarak bilgisayarımıza clone ediyoruz.<br>
+->Projemizin ana klasörünün içine local.properties dosyası oluşturuyoruz.<br>
+->içine "sdk.dir=C:/Users/YourUser/Android/sdk{Your Android sdk file path}" yolunu yazıp kaydediyoruz.<br>
+->ve simdi eclipse içinde gradle olarak porjemizi import edebiliriz.<br>
 
 (Sdk.dir Error Link)Ayrıntılı hata linki
+http://stackoverflow.com/questions/23983221/importing-gradle-project-android-error
